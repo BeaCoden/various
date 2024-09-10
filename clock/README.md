@@ -1,8 +1,5 @@
 # Digital and Analog Clock App
 
-![image](https://github.com/user-attachments/assets/022cae4f-309d-4574-9f2d-da59fe6535d2)
-
-
 This web application displays a clock that can switch between digital and analog displays. It has been developed using React and CSS. The app supports Dark Mode and adapts responsively to various screen sizes.
 
 ## Main Features

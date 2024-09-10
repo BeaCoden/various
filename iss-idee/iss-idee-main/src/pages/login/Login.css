@@ -1,0 +1,84 @@
+@import "../../index.css";
+
+.loginWrapper {
+  height: 100vh;
+  background-image: url("../../assets/img/loginBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.loginWrapper .headerWrapper h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--brown-color);
+  padding-bottom: 50px;
+  text-shadow:
+    0 1px 0 hsl(210, 100%, 60%),
+    0 1px 0 hsl(210, 100%, 58%),
+    0 3px 0 hsl(210, 100%, 56%),
+    0 4px 0 hsl(210, 100%, 54%),
+    0 5px 0 hsl(210, 65%, 49%),
+    0 6px 1px hsl(210, 96%, 56%),
+    0 0 5px hsl(210, 50%, 60%),
+    0 1px 3px hsl(210, 50%, 58%),
+    0 3px 5px hsl(210, 50%, 56%),
+    0 5px 10px hsl(210, 50%, 54%),
+    0 10px 10px hsl(210, 50%, 52%),
+    0 15px 15px hsl(210, 50%, 50%);
+}
+
+.formWrapper {
+  height: 250px;
+  width: 300px;
+  background-color: var(--light-brown-color);
+  padding: 20px;
+  border: 1px solid var(--light-brown-color);
+  box-shadow: 0 0 10px 0 var(--light-blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.formWrapper form button {
+  border: none;
+  padding: 10px;
+  background-color: var(--light-blue-color);
+  color: var(--white-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.formWrapper form button:hover {
+  background-color: var(--light-brown-color);
+  color: var(--light-blue-color);
+  font-weight: bold;
+}
+
+
+.inputWrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

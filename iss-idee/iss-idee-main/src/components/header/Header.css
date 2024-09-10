@@ -1,0 +1,88 @@
+.headerWrapper {
+  margin-top: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.headerWrapper h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color:  var(--brown-color);
+  text-shadow:
+    0 1px 0 hsl(210, 100%, 60%),
+    0 1px 0 hsl(210, 100%, 58%),
+    0 3px 0 hsl(210, 100%, 56%),
+    0 4px 0 hsl(210, 100%, 54%),
+    0 5px 0 hsl(210, 65%, 49%),
+    0 6px 1px hsl(210, 96%, 56%),
+    0 0 5px hsl(210, 50%, 60%),
+    0 1px 3px hsl(210, 50%, 58%),
+    0 3px 5px hsl(210, 50%, 56%),
+    0 5px 10px hsl(210, 50%, 54%),
+    0 10px 10px hsl(210, 50%, 52%),
+    0 15px 15px hsl(210, 50%, 50%);
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchWrapper input {
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.searchWrapper input:focus {
+  outline-color:var(--brown-color);
+}
+
+.searchWrapper button {
+  padding: 10px 20px;
+  border: 1px solid var(--brown-color);
+  border-radius: 10px;
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 15px;
+
+}
+
+.searchWrapper button:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border: 1px solid var(--brown-color);
+}
+
+.searchWrapper select {
+  padding: 5px 20px;
+  font-size: small;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -ms-border-radius: 5;
+  -o-border-radius: 5;
+  border-radius: 5px;
+  color: var(--brown-color);
+  background-color: var(--white-color);
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.searchWrapper select option {
+  font-size: x-small;
+  color: var(--brown-color);
+  background-color: var(--white-color);
+  }

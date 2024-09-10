@@ -1,0 +1,123 @@
+.detailWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.labelImgWrapper {
+    text-align: center;
+}
+
+.labelImgWrapper img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section h4 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.ingredients ul, .nutritional-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingredients ul li, .nutritional-info ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.nutritional-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.nutritional-info ul {
+    display: contents;
+}
+
+.nutritional-info ul li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-button {
+    color: var(--blue-color);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
+    background-color: var(--light-brown-color);
+    border: none;
+    padding: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.info-button:hover {
+    color: #0056b3;
+}
+
+.explanation {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+    position: relative;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explanation button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.source {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@media (max-width: 320px) {
+.detailWrapper img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+}

@@ -1,0 +1,39 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.digital-clock {
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+  color:var(--font-color);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: .5em;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.react-clock__mark__body {
+  background-color: var(--font-color);
+}
+
+.react-clock__hour-hand__body,
+.react-clock__minute-hand__body,
+.react-clock__second-hand__body {
+  background-color: var(--hour-mark-color);
+}

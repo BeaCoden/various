@@ -1,9 +1,5 @@
 # React Context API Template: Dark/Light Mode and Language Switch
 
-![image](https://github.com/user-attachments/assets/e876edf0-4d59-40d7-b93e-025fa0f71cf6)
-![image](https://github.com/user-attachments/assets/a0e949ef-2f5a-48ae-b128-533d1fb5ed53)
-
-
 This project demonstrates the use of React's Context API combined with custom hooks to manage global themes and language settings in a React application. It provides users the ability to switch between dark and light modes and toggle between English and German languages dynamically.
 
 ## Features

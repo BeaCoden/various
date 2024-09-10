@@ -1,6 +1,5 @@
 # React Global State Management Template - with useReducer and Context API for Dynamic Data Fetching
 
-![image](https://github.com/user-attachments/assets/1349c86a-f718-4fa8-9f76-dc26abe7d8d4)
 
 This project demonstrates the use of React's useReducer hook combined with custom hooks and the Context API to manage global state in a React application. It provides users with a dynamic way to fetch and display user data, encapsulating complex state management logic within a single reducer function.
 

@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Recipe Finder App
+
+## Overview
+
+The Recipe Finder app allows users to enter an ingredient and receive a list of recipes that use that ingredient. Ideal for cooking enthusiasts and anyone looking to expand their culinary horizons.
 
 ![Screenshot 2024-09-10 135925](https://github.com/user-attachments/assets/dbd1ffe2-94c5-419c-bc6a-32a1008434e7)
 

@@ -15,9 +15,9 @@ const Home = () => {
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
 
-  const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "TeaTime", "any"];
-
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
+
+  const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "TeaTime", "any"];
 
   const getData = async () => {
     try {

@@ -16,44 +16,41 @@ const AppRouter = () => {
     };
 
     window.addEventListener("storage", handleStorageChange);
-
     return () => {
       window.removeEventListener("storage", handleStorageChange);
     };
   }, []);
 
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/login"
+          element={user ? <Navigate to="/" /> : <Login />}
+        />
+        <Route
+          path="/"
+          element={user ? <Home /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/about"
+          element={<PrivateRouter />}>
           <Route
-            path="/login"
-            element={<Login />}
+            path=""
+            element={<About />}
           />
+        </Route>
+        <Route
+          path="/detail"
+          element={<PrivateRouter />}>
           <Route
-            path="/"
-            element={user ? <Home /> : <Navigate to="/login" />}
+            path=""
+            element={<Detail />}
           />
-          <Route
-            path="/about"
-            element={<PrivateRouter />}>
-            <Route
-              path=""
-              element={<About />}
-            />
-          </Route>
-          <Route
-            path="/detail"
-            element={<PrivateRouter />}>
-            <Route
-              path=""
-              element={<Detail />}
-            />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

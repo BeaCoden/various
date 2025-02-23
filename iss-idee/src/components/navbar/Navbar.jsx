@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setUser }) => {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 
-  const user = localStorage.getItem("user");
+  const user = sessionStorage.getItem("user");
 
   const toggleMenu = () => {
     setShow((prevShow) => !prevShow);
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("user");
-    navigate("/login");
+    sessionStorage.removeItem("user");
+    setUser(null);
+    navigate("/login", { replace: true });
     console.log("Logout successful");
   };
 

@@ -1,37 +1,56 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import Login from "../pages/login/Login";
 import Detail from "../pages/detail/Detail";
 import Navbar from "../components/navbar/Navbar";
 import PrivateRouter from "./PrivateRouter";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 const AppRouter = () => {
-  const [user, setUser] = useState(localStorage.getItem("user"));
+  const [user, setUser] = useState(sessionStorage.getItem("user") || null);
 
   useEffect(() => {
-    const handleStorageChange = () => {
-      setUser(localStorage.getItem("user"));
+    const checkUser = () => {
+      setUser(sessionStorage.getItem("user"));
     };
 
-    window.addEventListener("storage", handleStorageChange);
+    window.addEventListener("storage", checkUser);
     return () => {
-      window.removeEventListener("storage", handleStorageChange);
+      window.removeEventListener("storage", checkUser);
     };
   }, []);
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar setUser={setUser} />
       <Routes>
         <Route
           path="/login"
-          element={user ? <Navigate to="/" /> : <Login />}
+          element={
+            user ? (
+              <Navigate
+                to="/"
+                replace
+              />
+            ) : (
+              <Login setUser={setUser} />
+            )
+          }
         />
+
         <Route
           path="/"
-          element={user ? <Home /> : <Navigate to="/login" />}
+          element={
+            user ? (
+              <Home />
+            ) : (
+              <Navigate
+                to="/login"
+                replace
+              />
+            )
+          }
         />
         <Route
           path="/about"

@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-const Login = () => {
-  const [user, setUser] = useState("");
+const Login = ({ setUser }) => {
+  const [user, setLocalUser] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user) {
-      localStorage.setItem("user", user);
+      sessionStorage.setItem("user", user);
+      setUser(user);
       console.log("Login successful with user Name: ", user);
       navigate("/");
     } else {
@@ -31,7 +32,7 @@ const Login = () => {
               type="text"
               id="name"
               value={user}
-              onChange={(e) => setUser(e.target.value)}
+              onChange={(e) => setLocalUser(e.target.value)}
             />
           </div>
           <div className="inputWrapper">

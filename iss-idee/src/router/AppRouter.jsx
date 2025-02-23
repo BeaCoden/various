@@ -5,7 +5,6 @@ import About from "../pages/about/About";
 import Login from "../pages/login/Login";
 import Detail from "../pages/detail/Detail";
 import Navbar from "../components/navbar/Navbar";
-import PrivateRouter from "./PrivateRouter";
 
 const AppRouter = () => {
   const [user, setUser] = useState(sessionStorage.getItem("user") || null);
@@ -54,20 +53,30 @@ const AppRouter = () => {
         />
         <Route
           path="/about"
-          element={<PrivateRouter />}>
-          <Route
-            path=""
-            element={<About />}
-          />
-        </Route>
+          element={
+            user ? (
+              <About />
+            ) : (
+              <Navigate
+                to="/login"
+                replace
+              />
+            )
+          }
+        />
         <Route
           path="/detail"
-          element={<PrivateRouter />}>
-          <Route
-            path=""
-            element={<Detail />}
-          />
-        </Route>
+          element={
+            user ? (
+              <Detail />
+            ) : (
+              <Navigate
+                to="/login"
+                replace
+              />
+            )
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

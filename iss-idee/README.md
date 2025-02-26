@@ -1,76 +1,77 @@
-# Recipe Finder App
+# 🍽️ Recipe Finder App - Koch dir was
 
-## Overview
+🚀 **Live-Demo:** [issidee.vercel.app](https://issidee.vercel.app/)
 
-The Recipe Finder app allows users to enter an ingredient and receive a list of recipes that use that ingredient. Ideal for cooking enthusiasts and anyone looking to expand their culinary horizons.
+Die **Recipe Finder App** hilft dir, köstliche Rezepte auf Basis deiner vorhandenen Zutaten zu finden. Egal, ob du eine spontane Mahlzeit planst oder einfach Inspiration für dein nächstes Gericht suchst – diese App macht es einfach und unterhaltsam! 🎉
 
-![Screenshot 2024-09-10 135925](https://github.com/user-attachments/assets/dbd1ffe2-94c5-419c-bc6a-32a1008434e7)
+## 🥄 Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✅ **Zutatensuche:** Gib eine Zutat ein und erhalte passende Rezeptvorschläge.
+✅ **Filter nach Mahlzeitentyp:** Wähle zwischen Frühstück, Mittagessen, Abendessen, Snack oder Teezeit.
+✅ **Benutzerfreundliche Oberfläche:** Intuitives Design mit einfacher Navigation.
+✅ **Login & Logout:** Sichere Sitzungen mit automatischem Logout beim Schließen der App.
+✅ **Reaktionsschnelles Design:** Optimiert für Desktop und mobile Nutzung.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Screenshots
 
-### `npm start`
+| Startseite | Rezeptsuche | Login |
+|------------|------------|------------|
+|  |  |  |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologien
 
-### `npm test`
+Die App wurde mit den folgenden Technologien entwickelt:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚛️ **React.js** – Für die Benutzeroberfläche
+- 🌐 **React Router** – Für das Navigationssystem
+- 🎨 **CSS3** – Für das Styling
+- 🔥 **Vercel** – Bereitstellung der App
+- 🍲 **Edamam API** – Rezepte & Ernährungsinformationen
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Installation & Nutzung (lokal)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Falls du die App lokal starten möchtest:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1️⃣ Klone das Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/DeinGitHubUser/DeinRepo.git
+cd DeinRepo
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2️⃣ Installiere die Abhängigkeiten
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3️⃣ Starte die App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Die App wird unter [http://localhost:3000](http://localhost:3000) verfügbar sein.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deployment
 
-### Code Splitting
+Die App ist bereits unter [issidee.vercel.app](https://issidee.vercel.app/) gehostet. Falls du eine eigene Version deployen möchtest, kannst du das mit Vercel tun:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+vercel
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📜 Lizenz
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Diese App ist unter der **MIT-Lizenz** veröffentlicht – du kannst sie gerne weiterentwickeln und anpassen. 🎉

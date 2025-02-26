@@ -25,7 +25,7 @@ const Navbar = ({ setUser }) => {
       <div>
         <Link to="/">
           <img
-            className="chefsHatIcon"
+            className="chefsHatIcon animatedIcon"
             src={chefsHat}
             alt="chefsHat"
           />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
+import chefsHat from "../../assets/icon/chefsHat.png";
 
 const Navbar = ({ setUser }) => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,13 @@ const Navbar = ({ setUser }) => {
   return (
     <nav className="navWrapper">
       <div>
-        <Link to="/">logo</Link>
+        <Link to="/">
+          <img
+            className="chefsHatIcon"
+            src={chefsHat}
+            alt="chefsHat"
+          />
+        </Link>
       </div>
       <div className={`linkWrapper ${show ? "show" : ""}`}>
         <div

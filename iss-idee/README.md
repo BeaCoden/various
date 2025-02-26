@@ -16,7 +16,7 @@ Die **Recipe Finder App** hilft dir, köstliche Rezepte auf Basis deiner vorhand
 
 ## 📸 Screenshots
 
-| Startseite | Rezeptsuche | Login |
+| Login | Rezeptsuche | Rezepte |
 |------------|------------|------------|
 |  |  |  |
 

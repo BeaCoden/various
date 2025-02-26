@@ -9,7 +9,6 @@ const Header = ({ query, setQuery, selectedMeal, setSelectedMeal, mealTypes, get
 
   return (
     <div className="headerWrapper">
-      <h1>Koch dir was...</h1>
       <div className="searchWrapper">
         <form onSubmit={handleSubmit}>
           <input
@@ -37,7 +36,7 @@ const Header = ({ query, setQuery, selectedMeal, setSelectedMeal, mealTypes, get
               </option>
             ))}
           </select>
-          <button type="submit" >Rezept suchen</button>
+          <button type="submit">Rezept suchen</button>
         </form>
       </div>
     </div>

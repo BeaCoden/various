@@ -18,7 +18,7 @@ Die **Recipe Finder App** hilft dir, köstliche Rezepte auf Basis deiner vorhand
 
 | Login | Rezeptsuche | Rezepte |
 |------------|------------|------------|
-|  |  |  |
+| ![Login](src/assets/img/iPhone-16-PRO-MAX-localhost.png) | ![Rezeptsuche](src/assets/img/iPad-PRO-11-localhost.png) | ![Rezepte](src/assets/img/Macbook-Air-localhost.png) |
 
 ---
 

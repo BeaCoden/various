@@ -1,73 +1,59 @@
 .navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  background-color: var(--light-blue-color);
   border-bottom: 1px solid var(--brown-color);
-  background-color: var(--brown-color);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 0 20px;
+  box-shadow: 0 0 10px 0 var(--light-blue-color);
 }
 
-.navWrapper * {
-  color: var(--blue-color);
+.logoContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-
-.chefsHatIcon {
-  max-width: 60px;
-  height: auto;
-  object-fit: contain;
-  padding-top: 10px;
+.brandLogo {
+  width: 85px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
   z-index: 100;
-  transform: translateY(-50px);
-  opacity: 0;
-  animation: flyIn 1s ease-out forwards, float 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+  top: 0%;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-
-@keyframes flyIn {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-@keyframes glow {
-  0% {
-    filter: drop-shadow(0 0 5px rgba(164, 205, 252, 0.6));
-  }
-  100% {
-    filter: drop-shadow(0 0 15px rgba(164, 205, 252, 1));
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .chefsHatIcon {
-    max-width: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .chefsHatIcon {
-    max-width: 40px;
-  }
+.brandText {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--light-blue-color);
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: transparent ;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(23, 68, 116, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .linkWrapper {
@@ -89,6 +75,15 @@
 .closeIcon {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .brandText {   }
+}
+
+@media screen and (max-width: 768px) {
+  .brandText {  }
+}
+
 
 @media screen and (max-width: 768px) {
   .linkWrapper {

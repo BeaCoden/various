@@ -1,8 +1,8 @@
-# 🍽️ Recipe Finder App - Koch dir was
+# 🍽️ Recipe Finder App - IssIdee
 
 🚀 **Live-Demo:** [issidee.vercel.app](https://issidee.vercel.app/)
 
-Die **Recipe Finder App** hilft dir, köstliche Rezepte auf Basis deiner vorhandenen Zutaten zu finden. Egal, ob du eine spontane Mahlzeit planst oder einfach Inspiration für dein nächstes Gericht suchst – diese App macht es einfach und unterhaltsam! 🎉
+Die Rezept Finder App **IssIdee** hilft dir, köstliche Rezepte auf Basis deiner vorhandenen Zutaten zu finden. Egal, ob du eine spontane Mahlzeit planst oder einfach Inspiration für dein nächstes Gericht suchst – diese App macht es einfach und unterhaltsam! 🎉
 
 ## 🥄 Features
 

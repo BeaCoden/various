@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import Cooking from "../../assets/videos/Cooking.mp4";
 
 const Login = ({ setUser }) => {
   const [user, setLocalUser] = useState("");
@@ -21,6 +22,16 @@ const Login = ({ setUser }) => {
 
   return (
     <div className="loginWrapper">
+      <video
+        autoPlay
+        loop
+        muted
+        className="video">
+        <source
+          src={Cooking}
+          type="video/mp4"
+        />
+      </video>
       <div className="headerWrapper">
         <h1>Koch dir was...</h1>
       </div>

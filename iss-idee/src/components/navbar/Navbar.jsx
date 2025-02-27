@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import chefsHat from "../../assets/icon/chefsHat.png";
+import IssIdee from "../../assets/img/IssIdee.png";
 
 const Navbar = ({ setUser }) => {
   const [show, setShow] = useState(false);
@@ -22,12 +22,14 @@ const Navbar = ({ setUser }) => {
 
   return (
     <nav className="navWrapper">
-      <div>
+      <div className="logoContainer">
         <Link to="/">
+          {/* <span className="brandText">IssIdee</span> */}
           <img
-            className="chefsHatIcon animatedIcon"
-            src={chefsHat}
-            alt="chefsHat"
+            src={IssIdee}
+            alt="IssIdee"
+            className="brandLogo
+          "
           />
         </Link>
       </div>

@@ -2,10 +2,6 @@
 
 .loginWrapper {
   height: 100vh;
-  background-image: url("../../assets/img/loginBG.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,24 +9,22 @@
   gap: 32px;
 }
 
-.loginWrapper .headerWrapper h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: var(--brown-color);
-  padding-bottom: 50px;
-  text-shadow:
-    0 1px 0 hsl(210, 100%, 60%),
-    0 1px 0 hsl(210, 100%, 58%),
-    0 3px 0 hsl(210, 100%, 56%),
-    0 4px 0 hsl(210, 100%, 54%),
-    0 5px 0 hsl(210, 65%, 49%),
-    0 6px 1px hsl(210, 96%, 56%),
-    0 0 5px hsl(210, 50%, 60%),
-    0 1px 3px hsl(210, 50%, 58%),
-    0 3px 5px hsl(210, 50%, 56%),
-    0 5px 10px hsl(210, 50%, 54%),
-    0 10px 10px hsl(210, 50%, 52%),
-    0 15px 15px hsl(210, 50%, 50%);
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .formWrapper {
@@ -74,7 +68,6 @@
   color: var(--light-blue-color);
   font-weight: bold;
 }
-
 
 .inputWrapper {
   flex: 1 1 auto;

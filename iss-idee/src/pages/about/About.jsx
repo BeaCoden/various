@@ -8,9 +8,9 @@ const About = () => {
       <h1>Welcome...</h1>
       <div className="intro">
         <p>
-          Welcome to "Koch dir was...", your go-to app for discovering delicious recipes based on the ingredients you
-          have at hand! Whether you're looking for a quick meal or something more elaborate, this app helps you find the
-          perfect recipe with ease.
+          Welcome to "IssIdee", your go-to app for discovering delicious recipes based on the ingredients you have at
+          hand! Whether you're looking for a quick meal or something more elaborate, this app helps you find the perfect
+          recipe with ease.
         </p>
       </div>
 
@@ -42,10 +42,10 @@ const About = () => {
       <h2>About the App</h2>
       <div className="appInfo">
         <p>
-          "Koch dir was..." was built with the goal of making cooking more accessible and fun. The app allows users to
-          search for recipes based on available ingredients, making it easier to decide what's for dinner. With an
-          intuitive interface and a vast database of recipes, you're sure to find something that fits your taste and
-          dietary needs.
+          "IssIdee" was built with the goal of making cooking more accessible and fun. The app allows users to search
+          for recipes based on available ingredients, making it easier to decide what's for dinner. With an intuitive
+          interface and a vast database of recipes, you're sure to find something that fits your taste and dietary
+          needs.
         </p>
         <p>
           This app was developed using modern web technologies, ensuring a smooth and responsive user experience. It's

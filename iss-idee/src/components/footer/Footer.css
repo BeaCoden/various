@@ -1,0 +1,24 @@
+.footer {
+  background-color: var(--light-lapislazuli-color);
+
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.footer-content a, p {
+  color: var(--white-color);
+}
+
+.footer-content a {
+
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}

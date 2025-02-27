@@ -21,10 +21,23 @@
   transform: translate(-50%, -50%);
 }
 
-.headerWrapper {
+.headingWrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.headingWrapper h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: transparent; /* Text unsichtbar */
+  -webkit-text-stroke: 2px white; /* Weißer Rand für Webkit-Browser */
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white; /* Cursor-Effekt */
+  width: 0;
+  animation: typing 3s steps(15, end) forwards, blink 0.7s infinite;
 }
 
 .formWrapper {
@@ -74,4 +87,21 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+/* Schreibmaschinen-Effekt */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinken des Cursors */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

@@ -32,7 +32,7 @@ const Login = ({ setUser }) => {
           type="video/mp4"
         />
       </video>
-      <div className="headerWrapper">
+      <div className="headingWrapper">
         <h1>Koch dir was...</h1>
       </div>
       <div className="formWrapper">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Home.css";
 import Card from "../../components/card/Card";
-import Header from "../../components/header/Header";
+import Search from "../../components/search/Search";
 import chefIcon from "../../assets/img/chefIcon.png";
 import kitchenIsland from "../../assets/img/kitchenIsland.png";
 
@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header
+      <Search
         query={query}
         setQuery={setQuery}
         selectedMeal={selectedMeal}

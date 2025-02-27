@@ -22,7 +22,7 @@ const AppRouter = () => {
 
   return (
     <BrowserRouter>
-      <Navbar setUser={setUser} />
+      {user && <Navbar setUser={setUser} />}
       <Routes>
         <Route
           path="/login"
@@ -37,7 +37,6 @@ const AppRouter = () => {
             )
           }
         />
-
         <Route
           path="/"
           element={

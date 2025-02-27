@@ -10,13 +10,13 @@ const Login = ({ setUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (user) {
+    if (user.trim() && email.trim()) {
       sessionStorage.setItem("user", user);
       setUser(user);
       console.log("Login successful with user Name: ", user);
       navigate("/");
     } else {
-      console.log("User name is required");
+      console.log("Name und E-Mail sind erforderlich.");
     }
   };
 
@@ -33,7 +33,8 @@ const Login = ({ setUser }) => {
         />
       </video>
       <div className="headingWrapper">
-        <h1>Koch dir was...</h1>
+        <h1>IssIdee</h1>
+        <h2>Finde Rezepte mit Zutaten, die du bereits zu Hause hast.</h2>
       </div>
       <div className="formWrapper">
         <form onSubmit={handleSubmit}>
@@ -42,6 +43,7 @@ const Login = ({ setUser }) => {
             <input
               type="text"
               id="name"
+              placeholder="Dein Name"
               value={user}
               onChange={(e) => setLocalUser(e.target.value)}
             />
@@ -51,6 +53,7 @@ const Login = ({ setUser }) => {
             <input
               type="email"
               id="email"
+              placeholder="Deine E-Mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
